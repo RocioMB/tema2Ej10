@@ -32,7 +32,8 @@ namespace Ejercicio_10_Tema_2
             {
                 PesetasRMB2324 = double.Parse(txtPesetas.Text);
 
-                ResultadoAEuros = PesetasRMB2324 - EUROPTS;
+                //!? RMB2324 Corregimos el cálculo
+                ResultadoAEuros = PesetasRMB2324 / EUROPTS;
 
                 txtEuros.Text = ResultadoAEuros.ToString();
             }
