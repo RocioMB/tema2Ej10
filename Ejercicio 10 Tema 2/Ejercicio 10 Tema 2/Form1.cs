@@ -10,12 +10,12 @@ namespace Ejercicio_10_Tema_2
         private void BotonAPesetas_Click(object sender, EventArgs e)
         {
             const double EUROPTS = 16.386;
-            double Euros;
+            double EurosRMB2324; //!? Variable Euros cambiada con mis iniciales
             double ResultadoAPesetas;
 
-            Euros = double.Parse(txtEuros.Text);
+            EurosRMB2324 = double.Parse(txtEuros.Text);
 
-            ResultadoAPesetas = Euros * EUROPTS;
+            ResultadoAPesetas = EurosRMB2324 * EUROPTS;
 
             txtPesetas.Text = ResultadoAPesetas.ToString();
 
@@ -24,14 +24,14 @@ namespace Ejercicio_10_Tema_2
         private void BotonAEuros_Click(object sender, EventArgs e)
         {
             const double EUROPTS = 166.386;
-            double Pesetas;
+            double PesetasRMB2324; //!? Variable Pesetas cambiada con mis iniciales
             double ResultadoAEuros;
 
             try
             {
-                Pesetas = double.Parse(txtPesetas.Text);
+                PesetasRMB2324 = double.Parse(txtPesetas.Text);
 
-                ResultadoAEuros = Pesetas - EUROPTS;
+                ResultadoAEuros = PesetasRMB2324 - EUROPTS;
 
                 txtEuros.Text = ResultadoAEuros.ToString();
             }
