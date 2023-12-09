@@ -9,7 +9,8 @@ namespace Ejercicio_10_Tema_2
 
         private void BotonAPesetas_Click(object sender, EventArgs e)
         {
-            const double EUROPTS = 16.386;
+            //!? RMB2324 Corregimos el valor de la constante
+            const double EUROPTS = 166.386;
             double EurosRMB2324; //!? Variable Euros cambiada con mis iniciales
             double ResultadoAPesetas;
 
